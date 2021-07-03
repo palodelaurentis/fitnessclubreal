@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../flexbox"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Segunda entrega"
+	}
+}

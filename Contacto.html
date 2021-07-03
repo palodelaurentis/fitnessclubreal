@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" href="index.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	
+	<title>Contacto</title>
+	<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+			
+				<nav>
+
+				<ul class="nav_links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Centros.html">Centros</a></li>
+					<li><a href="Entrenamientos.html">Entrenamientos</a></li>
+					<li><a href="Online.html">Online</a></li>
+					<li><a href="Contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+
+</header>
+	<h1 style="text-align: center;"> E S C R I B I N O S</h1>
+
+<form action="enviar.php" method="POST" enctype="multipart/form-data">
+		<fieldset>
+
+		<label for="fname">Nombre</label>
+		<br>
+	<input type="text" name="Nombre" maxlength="100">
+		<br>
+		<label for="Apellido">Apellido</label>
+		<br>
+	<input type="text" name="Apellido" maxlength="100">
+		<br>
+	<label for="Email"> Email </label>
+	<br>
+<input type="text" name="Email" maxlength="100">
+<br>
+		<label for="Celular"> Celular</label>
+<br>
+<input type="text" name="Celular" maxlength="100">
+	<br>
+	<br>
+	<textarea>MENSAJE</textarea>
+	<br>
+	<h5>¿En que Fitness Club queres entrenar?</h5>
+
+	<select name="Centros">
+
+	<option value="BARRIO NORTE"> BARRIO NORTE</option>
+	<option value="BELGRANO"> BELGRANO </option>
+	<option value="DEVOTO"> DEVOTO</option>
+	<option value="PALERMO"> PALERMO</option>
+	<option value="PILAR"> PILAR </option>
+	<option value="SAN ISIDRO"> SAN ISIDRO </option>
+</select>
+	<br>
+
+	<input type="submit" name="submit" value="Enviar"> 
+	<br>
+	<input type="reset" name="reset" value="Limpiar"> 
+
+</fieldset>
+	</form>
+
+	<footer>
+
+
+		<div class="containerfooter">
+			<div class="copyright">
+				@thefitnessclub | Todos los derechos reservados | <a href=""> The Fitness Club</a>
+			</div>
+		<br>
+			<div class="information">
+				<a href="#">Asociate</a> 
+		
+				<a href="#">Terminos y Condiciones</a>
+			
+			</div>
+		</div>
+		
+			</footer>
+</body>
+</html>
+
+
+
+

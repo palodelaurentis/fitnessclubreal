@@ -1,0 +1,419 @@
+
+
+/* Barra de menu */
+li, a, button, form, table {
+	font-family: "Tenor Sans", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: whitesmoke;
+	text-decoration: none;
+
+}
+
+
+/*Menu inicio */
+
+.nav_links {
+	list-style: none;
+	
+
+}
+.nav_links li {
+	display: inline-block;
+	padding: 0px 30px;
+	align-items: center;
+}
+
+
+
+/* Imagen del body */
+body {
+		background-image: url('gym.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center center;
+		opacity: 0, 6;
+}
+
+/* Posicion del header */
+header { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 5%;
+	background-color: rgba(32, 32, 36, 0.8)
+}
+
+/*Boton de HOME */
+a:hover {
+    text-decoration: underline;
+}
+
+.boton_personalizado {
+  border: 2px solid whitesmoke;
+  padding: 10px;
+  border-radius: 30px;
+  background: #000;
+  margin-left: 650px;
+
+}
+
+/* Boton profesor - online */
+.boton_personalizado2 { 
+	border: 2px solid whitesmoke;
+	background: black;
+	padding: 10px;
+	border-radius: 25px;
+	display: inline-block;
+	animation-duration: 5s;
+	animation-name: aparecer;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+
+/* imagen profesor - online */
+.img imagenprofesor{ 
+	width: 400px;
+	height: 400px;
+}
+
+/* Contenedor de centros */	
+
+.contenedor { 
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+	display: flex;
+
+
+}
+
+.contenedor__cards {
+    margin: 30px;
+
+}
+
+/* Estilo del bloque */
+.card {
+    background: #E6E6E6;
+    border-radius: 15px;
+    padding: 20px;
+	display: flex;
+    align-items: center;
+   
+}
+
+.card__thumbnail {
+    width: 650px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card__img {
+    width: 40%;
+	height: 50%;
+	display: flex;
+}
+
+.card__titulo {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+	color: #6D6D6D;
+    display: flex;
+	margin-bottom: 20px;
+	margin-right: 150px;
+}
+
+.card__extracto {
+	line-height: 28px;
+	color: #6D6D6D;
+	margin-bottom: 20px;
+    font-size: 1em;
+	display: flex;
+	justify-content: left;
+
+}
+
+/* Boton de la pagina de entrenamientos */
+.boton {
+	display: inline-block;
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: space-between;
+	
+}
+/* Boton Ver mas */
+.boton__texto {
+	font-weight: 700px;
+	color: #6D6D6D;
+	text-decoration: underline;
+	
+}
+
+/* Boton Asociate */
+.boton__negro {
+	margin-top:50px;
+	border: 2px solid #6D6D6D;
+	padding: 30px;
+	background: #000;
+	border-radius: 20px;
+}
+
+.boton__negro:hover {
+	background: #4C4C4C;
+}
+
+/* Frase "no te quedes afuera" */
+.frase__texto {
+	font-size: 25px;
+	font-family: 'Tenor Sans', sans-serif;
+	color: whitesmoke;
+}
+
+
+/* Color de los titulos */
+h1{
+
+	color: white;
+	font-size: 40px;
+	font-family: "Tenor Sans" sans-serif;
+	align-items: center;
+}
+
+/*Estilo de los parrafos */
+p {
+	font-family: "Tenor Sans", sans-serif;
+	font-weight:500 ;
+	font-size: 20px;
+	color: whitesmoke;
+
+}
+
+
+/* Grilla pagina entrenamientos*/
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav informacion publicidad"
+    "nav horarios publicidad"
+	"nav footer containerfooter2";
+    grid-template-rows: 100px 1fr 1fr 100px;
+    grid-template-columns: 15% auto 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+
+.border {
+    border: 1px solid black;
+    background-image: none;
+
+  
+}
+.border2 { 
+    border: 1px solid black;
+    background-image: url(pesas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header {
+    grid-area: header;
+}
+
+
+
+section#horarios {
+    grid-area: horarios;
+}
+
+section#informacion {
+    grid-area: informacion;
+}
+
+nav {
+    grid-area: nav;
+    
+}
+aside {
+    grid-area: publicidad;
+    text-align: center;
+    position: relative;
+}
+
+footer{
+	grid-area: containerfooter2;
+	display: flex;
+	justify-content:left;
+	
+}
+
+
+.grid-item {
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 1em;
+}
+
+h3, p {
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+table, a { 
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+/* Slider de pagina Online */
+
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.slider{
+	position: relative;
+	width: 800px;
+	height: 300px;
+
+}
+
+ul.slider li{
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	width: inherit;
+	height: inherit;
+	background-color: black;
+	transition: opasity .5s;
+
+}
+
+ul.slider li img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+
+ul.slider li:first-child{
+	opacity: 1;
+}
+
+ul.slider li:target{
+	opacity: 1;
+}
+/* Botones para el slider */
+.menu{
+	text-align: center;
+	margin: 20px;
+	display: flex;
+
+}
+
+.menu.li{
+	display: inline-block;
+	text-align: center;
+
+}
+
+.menu li a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	background-color: grey;
+	padding: 10px;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	border-radius: 100%;
+}
+
+/* footer  */
+footer{
+	margin-top: 250px;
+	width: 100%;
+	height: 50px;
+
+	color: whitesmoke;
+	padding:25px;
+	background-image: linear-gradient(to right, black, grey );
+
+}
+
+.containerfooter{ 
+	display: flex;
+	justify-content: space-between;	
+
+}
+
+.information a { 
+	font-family: "Tenor Sans", sans-serif;
+	margin-left: 120px;
+	font-size: 14px;
+	
+}
+.copyright, a { 
+	font-family: "Tenor Sans", sans-serif;
+	font-size: 14px;
+}
+	
+
+/* Pagina de entrenamientos - imagenes flex */
+
+.padre-flex1 {
+	display: flex;
+	align-content: center;
+	text-align: center;
+	font-family: "Tenor Sans", sans-serif;
+	color:whitesmoke;
+	font-size:18px;
+
+    
+}
+	
+	.padre-flex2 {
+		display: flex;
+		align-content: center;
+		text-align: center;
+		font-family: "Tenor Sans", sans-serif;
+		color:whitesmoke;
+		font-size:18px;
+		
+		
+	}
+.fila1{ 
+
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1.5em;
+
+}
+
+.fila2{
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1.5em;
+}
